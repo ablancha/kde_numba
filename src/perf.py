@@ -31,6 +31,6 @@ for ii in range(1,5):
     out.plot()
 
 plt.tight_layout()
-plt.savefig('perf.png')
+plt.savefig('perf.svg')
 plt.show()
 
