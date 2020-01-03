@@ -4,6 +4,9 @@ A simple implementation of Kernel Density Estimation with Numba.
 
 `KDE_Numba` behaves exactly like `scipy.stats.gaussian_kde` (same syntax, same arguments). Numba provides a speed-up of about one order of magnitude compared to Scipy.
 
+![](/src/perf.svg)
+
+
 
 ## Dependencies
 
