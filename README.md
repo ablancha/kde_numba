@@ -2,10 +2,7 @@
 
 A simple implementation of Kernel Density Estimation with Numba. 
 
-```python 
-KDE\_Numba
-``` 
-behaves exactly like '''scipy.stats.gaussian\_kde''' (same syntax, same arguments). Numba provides a speed-up of about one order of magnitude compared to Scipy.
+`KDE_Numba` behaves exactly like `scipy.stats.gaussian_kde` (same syntax, same arguments). Numba provides a speed-up of about one order of magnitude compared to Scipy.
 
 
 ## Dependencies
