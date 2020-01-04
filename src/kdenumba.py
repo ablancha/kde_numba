@@ -1,5 +1,5 @@
 import numpy as np
-import numba
+import numba, scipy
 from numba import njit, prange
 
 
@@ -71,9 +71,10 @@ class KDE_Numba:
 
 
     def rescale_bandwidth(self):
-        mm = np.squeeze(self.dataset).copy()
-        mm -= np.sum(mm*self.weights)
-        cov = np.dot(mm*self.weights, mm.T)
+        cov = scipy._lib._numpy_compat.cov(self.dataset, 
+                                           rowvar=1,
+                                           bias=False,
+                                           aweights=self.weights)
         self.bw = np.sqrt(cov)*self.covariance_factor()
 
 
