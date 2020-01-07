@@ -1,6 +1,6 @@
 # kde\_numba
 
-A simple implementation of Kernel Density Estimation with Numba. 
+A simple implementation of 1-D Kernel Density Estimation with Numba. 
 
 `KDE_Numba` is instantiated and called like `scipy.stats.gaussian_kde` (same syntax, same arguments). For large arrays, Numba provides a speed-up of one to two orders of magnitude compared to Scipy.
 
